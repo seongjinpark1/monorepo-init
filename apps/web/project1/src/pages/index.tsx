@@ -13,7 +13,6 @@ function HomePage() {
       {/* titleTemplate는 /configs/seo/config.ts에서 변경 가능합니다. */}
       <NextSeo title="메인" />
       <HomeLayout content={<Home />} />
-      dasdasd
     </>
   );
 }

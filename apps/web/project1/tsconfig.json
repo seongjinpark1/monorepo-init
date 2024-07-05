@@ -1,7 +1,9 @@
 {
+  "extends": "tsconfig/base.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
+      "@/actions/*": ["./actions/*"],
       "@/types/*": ["./types/*"],
       "@/configs/*": ["./configs/*"],
       "@/components/*": ["./components/*"],
@@ -12,29 +14,26 @@
       "@/hooks/*": ["./hooks/*"],
       "@/utils/*": ["./utils/*"],
       "@/contexts/*": ["./contexts/*"],
+      "@/providers/*": ["./providers/*"],
       "@/theme/*": ["./configs/theme/*"],
-
       "@/swagger/*": ["./generated/swagger/*"],
       "@/images": ["./generated/path/images.ts"],
       "@/icons": ["./generated/icons/MyIcons.tsx"],
       "@/generated/*": ["./generated/*"]
     },
-    "target": "ES6",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "app.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts"],
-  "exclude": ["node_modules", "./public/mockServiceWorker.js"]
+  "include": [
+    "next-env.d.ts",
+    "app.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    ".next/types/**/*.ts",
+    "middleware.ts"
+  ]
 }
