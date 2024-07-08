@@ -5,7 +5,7 @@ import { CustomButton } from 'common/src/components';
 function Home() {
   return (
     <Box>
-      <Text>project1</Text>
+      <Text>project11</Text>
     </Box>
   );
 }
