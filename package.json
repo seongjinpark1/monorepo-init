@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
+    "commit": "tokript commit",
     "build": "turbo build",
     "build:a": "turbo run build --filter=./apps/web/project1",
     "build:b": "turbo run build --filter=./apps/web/project1",
@@ -22,13 +23,16 @@
     "postinstall": "patch-package",
     "lint": "turbo lint",
     "lint:a": "turbo run lint --filter=./apps/web/project1",
-    "lint:b": "turbo run lint --filter=./apps/web/project2"
+    "lint:b": "turbo run lint --filter=./apps/web/project2",
+    "husky": "husky install"
   },
   "dependencies": {
     "patch-package": "^8.0.0",
     "postinstall-postinstall": "^2.1.0"
   },
   "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "prettier": "^2.8.8",
     "turbo": "^2.0.6",
     "typescript": "^5.4.5"
