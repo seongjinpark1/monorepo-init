@@ -11,7 +11,6 @@ function HomePage() {
     <>
       {/* output: 똑똑한 개발자 | 메인 */}
       {/* titleTemplate는 /configs/seo/config.ts에서 변경 가능합니다. */}
-      33
       <NextSeo title="메인" />
       <HomeLayout content={<Home />} />
     </>
