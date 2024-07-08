@@ -11,7 +11,7 @@
     "clean-up": "node src/scripts/remove-unnecessary.js",
     "commit": "tokript commit",
     "convert:webp": "tokript convert:webp",
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
     "gen:api": "tokript gen:api",
     "gen:font": "tokript gen:font",
@@ -64,6 +64,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "eslint-config-custom": "*",
     "@chakra-ui/cli": "^2.4.0",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",

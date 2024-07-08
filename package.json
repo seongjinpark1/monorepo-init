@@ -8,16 +8,21 @@
     "packages": [
       "apps/web/project1",
       "apps/web/project2",
-      "apps/web/project3",
       "packages/*"
     ]
   },
   "scripts": {
     "build": "turbo build",
+    "build:a": "turbo run build --filter=./apps/web/project1",
+    "build:b": "turbo run build --filter=./apps/web/project1",
     "dev": "turbo dev",
+    "dev:a": "turbo run dev --filter=./apps/web/project1",
+    "dev:b": "turbo run dev --filter=./apps/web/project2",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "postinstall": "patch-package",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "lint:a": "turbo run lint --filter=./apps/web/project1",
+    "lint:b": "turbo run lint --filter=./apps/web/project2"
   },
   "dependencies": {
     "patch-package": "^8.0.0",
