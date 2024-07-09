@@ -61,7 +61,7 @@ cd my-turborepo
 npx turbo login
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview)
+This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview),
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:..
 
