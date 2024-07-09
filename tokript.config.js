@@ -2,6 +2,6 @@
 require('dotenv').config();
 exports.module = {
   commit: {
-    workspaces: ['web', 'native'],
+    workspaces: ['project1', 'project2', 'native'],
   },
 };
