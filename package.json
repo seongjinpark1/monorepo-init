@@ -2,7 +2,7 @@
   "name": "monorepo-test",
   "version": "0.0.0",
   "private": true,
-  "description": "aerok mono repository (aerok-user, aerok-manager, aerok-partner)",
+  "description": "mono repository",
   "author": "TOKTOKHAN.DEV<dev@toktokhan.dev>",
   "workspaces": {
     "packages": [
