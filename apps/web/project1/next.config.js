@@ -17,6 +17,7 @@ module.exports = withBundleAnalyzer({
     removeConsole:
       process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
   },
+  transpilePackages: ['common'],
   modularizeImports: {
     'lodash-es': {
       transform: 'lodash-es/{{member}}',

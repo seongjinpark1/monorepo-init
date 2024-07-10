@@ -4,7 +4,7 @@ echo "VERCEL_GIT_COMMIT_REF: $VERCEL_GIT_COMMIT_REF"
 echo "GIT_COMMIT_MESSAGE: $VERCEL_GIT_COMMIT_MESSAGE"
 
 # 테섭 / 본섭 빌드
-if ([[ "$VERCEL_GIT_COMMIT_REF" == "develop" ]] && [[ "$VERCEL_GIT_COMMIT_MESSAGE" == *project2-deploy* ]]) || ([[ "$VERCEL_GIT_COMMIT_REF" == "main" ]] && [[ "$VERCEL_GIT_COMMIT_MESSAGE" == *project2-deploy* ]]) ; then
+if ([[ "$VERCEL_GIT_COMMIT_REF" == "develop" ]] && [[ "$VERCEL_GIT_COMMIT_MESSAGE" == *project1-deploy* ]]) || ([[ "$VERCEL_GIT_COMMIT_REF" == "main" ]] && [[ "$VERCEL_GIT_COMMIT_MESSAGE" == *project1-deploy* ]]) ; then
   # Proceed with the build
   echo "✅ - Build can proceed"
   exit 1;

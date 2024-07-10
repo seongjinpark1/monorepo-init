@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { NextSeo } from 'next-seo';
 
 import HomeLayout from '@/components/@Layout/HomeLayout';
 import Home from '@/containers/Home';
 import withHomePageProvider from '@/hocs/withHomePageProvider';
+
+import { Locale } from '@/types/global';
 
 function HomePage() {
   return (
@@ -16,5 +19,13 @@ function HomePage() {
     </>
   );
 }
+
+export const getStaticProps = async ({ locale }: Locale) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+};
 
 export default withHomePageProvider(HomePage);
