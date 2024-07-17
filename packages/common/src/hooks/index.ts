@@ -7,3 +7,4 @@ export { default as useScrollSection } from './useScrollSection';
 export { default as useShare } from './useShare';
 export { default as useSize } from './useSize';
 export { useSyncWebStorage } from './useSyncWebStorage';
+export { default as useIsMobile } from './useIsMobile';
